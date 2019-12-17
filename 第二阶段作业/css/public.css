@@ -9,14 +9,12 @@
     height: 80px;
     background-color: #fff;
     box-shadow: 0 1px 0 0 #ddd;
-
-    display: table;
 }
 .header .header_nav {
+    width: 1200px;
     height: 80px;
-    margin: 0 78px;
+    margin: 0 auto;
     position: relative;
-    display: inline-block;
 
 }
 .header .header_nav .header_left{
@@ -296,10 +294,9 @@
     width: 1200px;
     height: 360px;
     margin: 0 auto;
-
+    position: relative;
 }
 .middle_top .middle_tu{
-    position: relative;
     box-shadow: 0 2px 2px rgba(1,1,1,.2);
 }
 .middle .section {
@@ -307,8 +304,8 @@
     height: 90px;
     margin: 0 auto;
     position: absolute;
-    left: 78px;
-    top: 344px;
+    left: 0;
+    top: 264px;
 }
 .section img{
     width: 150px;
@@ -375,7 +372,6 @@
     line-height: 54px;
     font-size: 16px;
     float: left;
-    //display: inline-block;
     padding: 0 44px;
 }
 .menu .navHome li>a {
@@ -662,6 +658,7 @@
 /*页脚开始*/
 .footer {
     width: 100%;
+    min-width: 1200px;
     height: 140px;
     background-color: #444547;
     font-size: 12px;
@@ -690,6 +687,10 @@
     display: block;
     width: 62px;
     height: 61px;
+}
+.fixed .first:hover{
+    color: #FFFFFF;
+    background-color: deepskyblue;
 }
 .fixed img {
     display: none;
