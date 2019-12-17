@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麦子学院_腾讯课堂</title>
+    <link rel="shortcut icon" href="//8.url.cn/edu/edu_modules/edu-ui/img/nohash/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <script src="js/jquery/jquery.min.js"></script>
+    <style>
+        .add-top {
+            position: fixed;
+            top: 0;
+            left: 75px;
+            background-color: white;
+            //z-index: 1000;
+        }
+        .add-top>ul {
+            margin-left: 200px;
+        }
+        .add-top>div {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header_nav">
+            <div class="header_left">    <!--最左边部分-->
+                <a href="#">
+                    <img src="image/tencent.png" alt="腾讯课堂" class="img1">
+                </a>
+            </div>                   <!--最左边部分结束-->
+            <!--分类开始-->
+            <div class="header_sort">
+                <div class="header_sort_a">
+                    <div class="hidden_home">
+                        <i class="iconfont">&#xe608;</i>
+                        <a href="#">分类</a>
+                    </div>
+                    <ul class="hidden_lv1">
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">IT·互联网</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">前端开发</a></span>
+                                        <span><a href="#">java</a></span>
+                                        <span><a href="#">产品策划</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <span class="special"><a href="#">腾讯课堂严选课程</a></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">互联网产品</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">产品策划</a></span>
+                                                <span><a href="#">产品运营</a></span>
+                                                <span><a href="#">游戏策划</a></span>
+                                                <span><a href="#">游戏运营</a></span>
+                                                <span><a href="#">新媒体营销</a></span>
+                                                <span><a href="#">网络营销理论</a></span>
+                                                <span><a href="#">SEO</a></span>
+                                                <span><a href="#">SEM</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">编程语言</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">C</a></span>
+                                                <span><a href="#">C++</a></span>
+                                                <span><a href="#">JAVA</a></span>
+                                                <span><a href="#">Python</a></span>
+                                                <span><a href="#">C#/.net</a></span>
+                                                <span><a href="#">Ruby</a></span>
+                                                <span><a href="#">JavaScript</a></span>
+                                                <span><a href="#">Perl</a></span>
+                                                <span><a href="#">SQL</a></span>
+                                                <span><a href="#">Object-C</a></span>
+                                                <span><a href="#">Lua</a></span>
+                                                <span><a href="#">FlashAS3.0</a></span>
+                                                <span><a href="#">Swift</a></span>
+                                                <span><a href="#">VB.Net</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">前端开发</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">腾讯自研课</a></span>
+                                                <span><a href="#">基础就业课</a></span>
+                                                <span><a href="#">实战进阶课</a></span>
+                                                <span><a href="#">技术专题课</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">移动开发</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">Android开发</a></span>
+                                                <span><a href="#">iOS开发</a></span>
+                                                <span><a href="#">跨平台APP开发</a></span>
+                                                <span><a href="#">微信开发</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">网络与运维</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">Linux运维</a></span>
+                                                <span><a href="#">Python自动化运维</a></span>
+                                                <span><a href="#">DevOps</a></span>
+                                                <span><a href="#">信息安全</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">游戏开发</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">Unity3D游戏开发</a></span>
+                                                <span><a href="#">Cocos2D-x游戏开发</a></span>
+                                                <span><a href="#">游戏服务器开发</a></span>
+                                                <span><a href="#">HTML5游戏</a></span>
+                                                <span><a href="#">UE4</a></span>
+                                                <span><a href="#">VR/AR</a></span>
+                                                <span><a href="#">OpenGL开发</a></span>
+                                                <span><a href="#">egret游戏开发</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">软件测试</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">敏捷开发</a></span>
+                                                <span><a href="#">软件测试</a></span>
+                                                <span><a href="#">软件研发</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">云计算大数据</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">云计算</a></span>
+                                                <span><a href="#">大数据</a></span>
+                                                <span><a href="#">人工智能</a></span>
+                                                <span><a href="#">物联网</a></span>
+                                                <span><a href="#">区块链</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">硬件开发</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">嵌入式开发</a></span>
+                                                <span><a href="#">IC设计</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">认证考试</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">思科认证</a></span>
+                                                <span><a href="#">华为认证</a></span>
+                                                <span><a href="#">红帽</a></span>
+                                                <span><a href="#">软考</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">设计·创作</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">平面设计</a></span>
+                                        <span><a href="#">UI设计</a></span>
+                                        <span><a href="#">室内设计</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <span class="special"><a href="#">腾讯课堂大师班</a></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">平面设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">电商美工</a></span>
+                                                <span><a href="#">综合平面设计</a></span>
+                                                <span><a href="#">摄影后期</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">设计软件</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">PhotoShop</a></span>
+                                                <span><a href="#">InDesign</a></span>
+                                                <span><a href="#">Axure</a></span>
+                                                <span><a href="#">CDR</a></span>
+                                                <span><a href="#">Illustrator</a></span>
+                                                <span><a href="#">Dreamweaver</a></span>
+                                                <span><a href="#">CAD</a></span>
+                                                <span><a href="#">UG</a></span>
+                                                <span><a href="#">Solidworks</a></span>
+                                                <span><a href="#">Sketchup</a></span>
+                                                <span><a href="#"> Rhino3D</a></span>
+                                                <span><a href="#">Pro/E</a></span>
+                                                <span><a href="#">ZBrush</a></span>
+                                                <span><a href="#">Cinema 4D</a></span>
+                                                <span><a href="#">SAI</a></span>
+                                                <span><a href="#">Flash</a></span>
+                                                <span><a href="#">3DMAX</a></span>
+                                                <span><a href="#">MAYA</a></span>
+                                                <span><a href="#">VRay</a></span>
+                                                <span><a href="#">AE</a></span>
+                                                <span><a href="#">Premiere</a></span>
+                                                <span><a href="#">Fireworks</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">环境艺术设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">室内设计</a></span>
+                                                <span><a href="#">景观设计</a></span>
+                                                <span><a href="#">建筑设计</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">绘画创作</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">插画漫画</a></span>
+                                                <span><a href="#">国画油画</a></span>
+                                                <span><a href="#">水彩水粉画</a></span>
+                                                <span><a href="#">素描</a></span>
+                                                <span><a href="#">手绘其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">工业产品设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">产品设计</a></span>
+                                                <span><a href="#">模具设计</a></span>
+                                                <span><a href="#">机械设计</a></span>
+                                                <span><a href="#">包装设计</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">UI设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">交互设计</a></span>
+                                                <span><a href="#">游戏UI设计</a></span>
+                                                <span><a href="#">Web UI设计</a></span>
+                                                <span><a href="#">App UI设计</a></span>
+                                                <span><a href="#">腾讯设计学院</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">游戏动画设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">游戏角色设计</a></span>
+                                                <span><a href="#">场景概念设计</a></span>
+                                                <span><a href="#">游戏模型设计</a></span>
+                                                <span><a href="#">游戏特效设计</a></span>
+                                                <span><a href="#">动画设计</a></span>
+                                                <span><a href="#">游戏美宣</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">影视后期设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">包装与剪辑</a></span>
+                                                <span><a href="#">特效与后期</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">服装设计</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">服装设计打版</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">电商·营销</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">电商平台</a></span>
+                                        <span><a href="#">跨境平台</a></span>
+                                        <span><a href="#">社交电商</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">电商平台</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">淘宝营销</a></span>
+                                                <span><a href="#">拼多多营销</a></span>
+                                                <span><a href="#">京东营销</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">跨境电商</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">亚马逊</a></span>
+                                                <span><a href="#">Shopee（虾皮）</a></span>
+                                                <span><a href="#">速卖通</a></span>
+                                                <span><a href="#">阿里国际站</a></span>
+                                                <span><a href="#">独立站</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">社交电商</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">直播短视频电商</a></span>
+                                                <span><a href="#">微信电商</a></span>
+                                                <span><a href="#">社群营销</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">职业·考证</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">公务员</a></span>
+                                        <span><a href="#">教师考试</a></span>
+                                        <span><a href="#">建筑工程</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">公考求职</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">公务员</a></span>
+                                                <span><a href="#">事业单位</a></span>
+                                                <span><a href="#">教师考试</a></span>
+                                                <span><a href="#">金融银行</a></span>
+                                                <span><a href="#">企业招聘/其他招考</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">法学院</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">法律硕士</a></span>
+                                                <span><a href="#">法律职业资格</a></span>
+                                                <span><a href="#">法律实务</a></span>
+                                                <span><a href="#">趣味学法</a></span>
+                                                <span><a href="#">警法考试</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">财会金融</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">会计职称</a></span>
+                                                <span><a href="#">注册会计书</a></span>
+                                                <span><a href="#">国际证书</a></span>
+                                                <span><a href="#">金融类从业</a></span>
+                                                <span><a href="#">会计实务操作</a></span>
+                                                <span><a href="#">其他财经类考试</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">医疗卫生</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">职业药师</a></span>
+                                                <span><a href="#">职业医师</a></span>
+                                                <span><a href="#">职业护士</a></span>
+                                                <span><a href="#">健康管理师</a></span>
+                                                <span><a href="#">中医技能</a></span>
+                                                <span><a href="#">卫生资格</a></span>
+                                                <span><a href="#">其他医疗类培训</a></span>
+                                                <span><a href="#">医学升学</a></span>
+                                                <span><a href="#">妇幼课堂</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">建筑工程</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">一级建筑师</a></span>
+                                                <span><a href="#">二级建筑师</a></span>
+                                                <span><a href="#">消防工程师</a></span>
+                                                <span><a href="#">工程造价（实操）</a></span>
+                                                <span><a href="#">工程施工（技能）</a></span>
+                                                <span><a href="#">注册工程师</a></span>
+                                                <span><a href="#">其他建工类培训</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">职业技能</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">人力资源</a></span>
+                                                <span><a href="#">办公软件</a></span>
+                                                <span><a href="#">计算机等级考试</a></span>
+                                                <span><a href="#">技工技能</a></span>
+                                                <span><a href="#">心里咨询</a></span>
+                                                <span><a href="#">企业培训</a></span>
+                                                <span><a href="#">创业教育</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">升学·考研</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">考研</a></span>
+                                        <span><a href="#">大学</a></span>
+                                        <span><a href="#">高中</a></span>
+                                        <span><a href="#">初中</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <span class="special"><a href="#">腾讯课堂名师来了</a></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">考研</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">规划指导</a></span>
+                                                <span><a href="#">考研英语</a></span>
+                                                <span><a href="#">考研政治</a></span>
+                                                <span><a href="#">考研数学</a></span>
+                                                <span><a href="#">专业课</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">大学</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">自考</a></span>
+                                                <span><a href="#">专升本</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">高中</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">高考备战</a></span>
+                                                <span><a href="#">高二</a></span>
+                                                <span><a href="#">高一</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">初中</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">中考备战</a></span>
+                                                <span><a href="#">初二</a></span>
+                                                <span><a href="#">初一</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">小学</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">语文</a></span>
+                                                <span><a href="#">数学</a></span>
+                                                <span><a href="#">英语</a></span>
+                                                <span><a href="#">其他</a></span>
+                                                <span><a href="#">小升初备战</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">兴趣·生活</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">摄影</a></span>
+                                        <span><a href="#">乐器演奏</a></span>
+                                        <span><a href="#">美妆</a></span>
+                                        <span><a href="#">育儿</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <span class="special"><a href="#">腾讯课堂大师班</a></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">母婴亲子</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">科学孕产</a></span>
+                                                <span><a href="#">育儿护理</a></span>
+                                                <span><a href="#">亲子启蒙</a></span>
+                                                <span><a href="#">家庭教育</a></span>
+                                                <span><a href="#">少儿编程</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">音乐乐器</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">音乐基础</a></span>
+                                                <span><a href="#">唱歌发声</a></span>
+                                                <span><a href="#">乐器演奏</a></span>
+                                                <span><a href="#">音乐制作</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">文艺修养</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">摄影</a></span>
+                                                <span><a href="#">书法</a></span>
+                                                <span><a href="#">棋牌</a></span>
+                                                <span><a href="#">益智休闲</a></span>
+                                                <span><a href="#">传统文化</a></span>
+                                                <span><a href="#">手工手艺</a></span>
+                                                <span><a href="#">TED公开课</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">生活百科</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">婚恋交友</a></span>
+                                                <span><a href="#">家居家装</a></span>
+                                                <span><a href="#">时尚美妆</a></span>
+                                                <span><a href="#">美食烹饪</a></span>
+                                                <span><a href="#">养生保健</a></span>
+                                                <span><a href="#">动植育养</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">运动健康</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">体育休闲</a></span>
+                                                <span><a href="#">健身训练</a></span>
+                                                <span><a href="#">舞蹈健美</a></span>
+                                                <span><a href="#">武术格斗</a></span>
+                                                <span><a href="#">电子竞技</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">投资理财</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">证券投资</a></span>
+                                                <span><a href="#">期权期货</a></span>
+                                                <span><a href="#">外汇衍生</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hidden1">
+                                <div class="hidden_lv2">
+                                    <div>
+                                        <a href="#">语言·留学</a><i class="iconfont" style="float: right;font-weight: normal;">&#xe600;</i>
+                                    </div>
+                                    <div>
+                                        <span><a href="#">实用英语</a></span>
+                                        <span><a href="#">雅思</a></span>
+                                        <span><a href="#">托福</a></span>
+                                    </div>
+                                </div>
+                                <div class="hidden_lv2_home">
+                                    <div class="row_home">
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">实用英语</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">英语口语</a></span>
+                                                <span><a href="#">学术英语</a></span>
+                                                <span><a href="#">青少年英语</a></span>
+                                                <span><a href="#">新概念英语</a></span>
+                                                <span><a href="#">外语翻译</a></span>
+                                                <span><a href="#">词汇语法</a></span>
+                                                <span><a href="#">职场英语</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">出国留学</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">雅思</a></span>
+                                                <span><a href="#">托福</a></span>
+                                                <span><a href="#">K12留学</a></span>
+                                                <span><a href="#">研究生留学</a></span>
+                                                <span><a href="#">留学指导</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">英语四六级</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">英语四级</a></span>
+                                                <span><a href="#">英语六级</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">日语</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">日语零基础</a></span>
+                                                <span><a href="#">日语初级</a></span>
+                                                <span><a href="#">日语中高级</a></span>
+                                                <span><a href="#">兴趣日语</a></span>
+                                                <span><a href="#">日语考试</a></span>
+                                                <span><a href="#">日本留学</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">韩语</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">韩语零基础</a></span>
+                                                <span><a href="#">韩语初级</a></span>
+                                                <span><a href="#">韩语中高级</a></span>
+                                                <span><a href="#">旅游韩语</a></span>
+                                                <span><a href="#">韩流文化</a></span>
+                                                <span><a href="#">TOPIK考试/留学</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="row_left">
+                                                <span><a href="#">小语种</a></span>
+                                            </div>
+                                            <div class="row_right">
+                                                <span><a href="#">法语</a></span>
+                                                <span><a href="#">德语</a></span>
+                                                <span><a href="#">葡萄牙语</a></span>
+                                                <span><a href="#">西班牙语</a></span>
+                                                <span><a href="#">方言</a></span>
+                                                <span><a href="#">其他</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--分类结束-->
+            <!--搜索框开始-->
+            <div class="header_search">
+                <div class="header_search_in">
+                    <a class="kecheng_jigou">
+                        <span class="kecheng">课程<i class="iconfont " style="font-size: 13px">&#xe630;</i></span>
+                        <span class="jigou">机构<i class="iconfont " style="font-size: 13px">&#xe630;</i></span>
+                    </a>
+                    <label>
+                        <input type="text" placeholder="搜索课程" class="search_box" />
+                    </label>
+                    <a href="#" class="search_tu"><i class="iconfont ">&#xe603;</i></a>
+                </div>
+            </div>
+            <!--搜索框结束-->
+            <div class="header_right">
+                <div class="download">
+                    <ul>
+                        <li><a href="#">下载</a>
+                            <ul>
+                                <li><a href="#">Win客户端</a></li>
+                                <li><a href="#">Moc客户端</a></li>
+                                <li><a href="#">App客户端</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middle_top">
+            <img src="image/10万.png" alt="" class="middle_tu">
+        </div>
+        <section class="section">
+            <img src="image/麦子学院.jpg" alt="">
+            <div class="section_div">
+                <h2>麦子学院</h2>
+                <span>好评度 93%</span><i class="iconfont">&#xe654;</i>
+                <span>学生数15万</span><i class="iconfont">&#xe654;</i>
+                <span> 泛IT在线教育平台，在线学习好工作</span><i class="iconfont">&#xe654;</i>
+                <a href="#" class="qq"><i class="iconfont" style="font-size: 16px;">&#xe63d;</i>在线咨询</a>
+            </div>
+        </section>
+
+    </div>
+    <div class="menu_nav">
+        <div class="menu">
+            <div class="navHome">
+                <ul >
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">课程（0）</a></li>
+                    <li><a href="#">老师（13）</a></li>
+                    <li class="active"><a href="#">关于我们</a></li>
+                </ul>
+                <div><a href="#" class="nav-a"><i class="iconfont">&#xe63d;</i>在线咨询</a></div>
+            </div>
+            <div class="panel ">
+                <div class="aboutWe">
+                    <div class="background">
+                        <span>麦子学院</span>
+                    </div>
+                    <div class="jianJie">
+                        <h2>机构简介</h2>
+                        <div>麦子学院是国内IT职业教育的领导品牌，
+                            国内第一个将在线教育课程分为职业课程
+                            和兴趣课程的在线教育机构。
+                            现在美国成立了商务中心，
+                            所有课程的的制作老师均为业内大牛，
+                            因为专注所以专业，让你站在巨人的肩膀上快速成长。</div>
+                    </div>
+                </div>
+            </div>
+            <!--totallabel-->
+            <div id="totallabel" style="display:none">
+                <!--选项一内容-->
+
+                <div class="in">
+                    <div class="homePage">
+                        <div class="live">
+                            <h3>2016年新推直播公开课</h3>
+                            <div class="live_tu">
+                                <img src="image/440.png" alt="">
+                                <div class="anZ">
+                                    <a href="#">安卓开发炫酷动画项目速成</a>
+                                    <p>安卓开发酷炫技巧详解</p>
+                                    <div class="person">
+                                        <img src="image/04.webp" alt="" style="width: 30px;border-radius: 50%;">
+                                        <span>麦子学院-李露</span><i class="iconfont">&#xe654;</i><span>0人 最近报名</span>
+                                    </div>
+                                    <h2>免费</h2>
+                                    <input type="button" value="立即报名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special_Plan">
+                            <span class="sp">小麦特别策划
+                                <a href="#">更多</a>
+                            </span>
+                            <div class="planItem">
+                                <div class="itemHome">
+                                    <ul class="item">
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home01.webp" alt="">
+                                                <h4><a href="#">新手必知游戏原画设计知识</a></h4>
+                                                <span>免费</span><span>1人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home02.webp" alt="">
+                                                <h4><a href="#">三节课了解Android L-你不的不听的技巧</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home03.webp" alt="">
+                                                <h4><a href="#">Cocos2d-x游戏开发快速入门-争做游戏霸主</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home04.webp" alt="">
+                                                <h4><a href="#">Drupal开发基础-轻松玩转web开发</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home05.webp" alt="">
+                                                <h4><a href="#">神秘名企美女老师带你学Java</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special_Plan">
+                            <span class="sp">2015年重点录播课
+                                <a href="#">更多</a>
+                            </span>
+                            <div class="planItem">
+                                <div class="itemHome">
+                                    <ul class="item">
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home06.webp" alt="">
+                                                <h4><a href="#">Web前端开发基础之Html5+CSS3</a></h4>
+                                                <span>免费</span><span>1人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home07.webp" alt="">
+                                                <h4><a href="#">Javascript初步开发入门</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home08.webp" alt="">
+                                                <h4><a href="#">产品经理成长之路-产品的商业模式画布</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home09.webp" alt="">
+                                                <h4><a href="#">产品经理成长之路-互联网思维</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="itemCard">
+                                                <img src="image/home10.webp" alt="">
+                                                <h4><a href="#">产品经理成长之路-互联网产品及产品经理</a></h4>
+                                                <span>免费</span><span>0人最近报名</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="starTeacher">
+                            <h3 style="padding-top: 10px;color: #262626">明星老师</h3>
+                            <div class="teacher">
+                                <ul class="teach">
+                                    <li class="tea">
+                                        <img src="image/06.jpg" alt="">
+                                        <div class="js">
+                                            <h4><a href="#">麦子学院（原麦可网）</a></h4>
+                                            <div class="js_div">
+                                                <span>课程 16</span>
+                                                <i class="iconfont">&#xe654;</i>
+                                                <span>学生 6598</span>
+                                                <p>麦子学院公开课总客服，欢迎大家体验麦子学院精品公开课。vip可咨询本客服QQ3968830</p>
+                                                <div style="padding-top: 5px;font-size: 14px">
+                                                    <span>任教： <a href="#" >iOS开发玩转界面-UIKit</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tea right">
+                                        <img src="image/07.jpg" alt="">
+                                        <div class="js">
+                                            <h4><a href="#">麦子学院--Sundy</a></h4>
+                                            <div class="js_div">
+                                                <span>课程 22</span>
+                                                <i class="iconfont">&#xe654;</i>
+                                                <span>学生 206693</span>
+                                                <p>国内知名架构师，讲师 。曾任三星Android北美PMAndroid架构师，14年软件项目开发设计经验，现任麦子学院CEO</p>
+                                                <div style="padding-top: 5px;font-size: 14px">
+                                                    <span>任教： <a href="#" >iOS开发玩转界面-UIKit</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tea">
+                                        <img src="image/09.webp" alt="">
+                                        <div class="js">
+                                            <h4><a href="#">麦子学院--Rocky</a></h4>
+                                            <div class="js_div">
+                                                <span>课程 6</span>
+                                                <i class="iconfont">&#xe654;</i>
+                                                <span>学生 3216</span>
+                                                <p>7年嵌入式开发经验，专注于嵌入式Linux应用软件及内核、驱动的开发和研究工作，曾任职长虹嵌入式高级工程师</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tea right">
+                                        <img src="image/04.webp" alt="">
+                                        <div class="js">
+                                            <h4><a href="#">麦子学院-李露</a></h4>
+                                            <div class="js_div">
+                                                <span>课程 11</span>
+                                                <i class="iconfont">&#xe654;</i>
+                                                <span>学生 31779</span>
+                                                <p>前传统机构教务主管，现在任麦子学院的课程顾问以及教学服务负责人。</p>
+                                                <div style="padding-top: 5px;font-size: 14px">
+                                                    <span>任教： <a href="#" >android app开发环境搭建和配置</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="goodStu">
+                            <h3 style="padding-top: 10px;color: #262626">优秀学员</h3>
+                            <ul class="teach">
+                                <li class="tea">
+                                    <img src="image/goodStu.jpg" alt="">
+                                    <div class="js">
+                                        <h3 style="margin-bottom: 10px">刘梦奇</h3>
+                                        <div>
+                                            <p>麦子学院产品经理毕业学员，北京铭万互联网科技有限公司的产品经理</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--主页-->
+                <div class="in">
+                    <div class="course">
+                    <div class="course_a">
+                        <span><i class="iconfont">&#xe8fb;</i>该机构没有在架课程</span>
+                    </div>
+                </div>
+                </div><!--课程-->
+                 <!--<div><a href="javascript:;" onclick="toNext(1,2)">跳转</a></div>-->
+                <div class="in">
+                    <div class="teacher">
+                    <ul class="teach">
+                        <li class="tea">
+                            <img src="image/01.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院-胡明星</a></h4>
+                                <div class="js_div">
+                                    <span>课程 1</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 381</span>
+                                    <p>80后成都土著帅哥，7年web开发经验，3年培训讲师经验，热爱互联网，热衷于web研发，参与三十余个大中型web项目的设计与研</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/2.webp" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院-Ocean</a></h4>
+                                <div class="js_div">
+                                    <span>课程 14</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 11606</span>
+                                    <p>胡子哥（网名）8年大学生就业指导教育行业从业经验，大学生就业辅导牛人，多家大学外聘就业辅导大神。</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/03.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">Web老师-范启凤</a></h4>
+                                <div class="js_div">
+                                    <span>课程 2</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 149</span>
+                                    <p>前华为工程师，麦子学院金牌讲师<br>
+                                        曾参与华为大数据研发，网站优化等大型项目，5年web前端开发</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/04.webp" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院-李露</a></h4>
+                                <div class="js_div">
+                                    <span>课程 11</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 31779</span>
+                                    <p>前传统机构教务主管，现在任麦子学院的课程顾问以及教学服务负责人。</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/05.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">助教--Zoe</a></h4>
+                                <div class="js_div">
+                                    <span>课程 14</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 1053</span>
+                                    <p>麦子学院助教。对课程有疑问的同学和有想了解企业直通班的同学可直接加QQ联系。</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/06.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院（原麦可网）</a></h4>
+                                <div class="js_div">
+                                    <span>课程 16</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 6598</span>
+                                    <p>麦子学院公开课总客服，欢迎大家体验麦子学院精品公开课。vip可咨询本客服QQ3968830</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/07.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院--Sundy</a></h4>
+                                <div class="js_div">
+                                    <span>课程 22</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 206693</span>
+                                    <p>国内知名架构师，讲师 。曾任三星Android北美PMAndroid架构师，14年软件项目开发设计经验，现任麦子学院CEO</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/08.webp" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院--谭钧</a></h4>
+                                <div class="js_div">
+                                    <span>课程 4</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 2676</span>
+                                    <p>android高级开发工程师、5年的app开发，成功上线多个app应用程序</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/09.webp" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院--Rocky</a></h4>
+                                <div class="js_div">
+                                    <span>课程 6</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 3216</span>
+                                    <p>7年嵌入式开发经验，专注于嵌入式Linux应用软件及内核、驱动的开发和研究工作，曾任职长虹嵌入式高级工程师</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/10.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">李希</a></h4>
+                                <div class="js_div">
+                                    <span>课程 1</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 1410</span>
+                                    <p>成都莫比乌斯科技创始人。10年编程经验，精通手游开发。制作有《大话武侠》、《魔法佣兵团》、《破杀千军》等手游。</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/11.webp" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院-Arvin</a></h4>
+                                <div class="js_div">
+                                    <span>课程 4</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 2872</span>
+                                    <p>麦子学院物联网感知端开发课程讲师，毕业于治学严谨的西北工业大学，从业10年，一直战斗在嵌入式系统开发的最前沿，有丰富</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea right">
+                            <img src="image/12.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">助教-倩倩</a></h4>
+                                <div class="js_div">
+                                    <span>课程 12</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 5508</span>
+                                    <p>麦子学院IT课程助教。热爱互联网，热衷于web研发，参与多个项目的设计与研发。丰富的课程管理经验。</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tea">
+                            <img src="image/13.jpg" alt="">
+                            <div class="js">
+                                <h4><a href="#">麦子学院UI讲师-刘昊琛</a></h4>
+                                <div class="js_div">
+                                    <span>课程 2</span>
+                                    <i class="iconfont">&#xe654;</i>
+                                    <span>学生 2539</span>
+                                    <p>暂无老师介绍</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                </div><!--老师-->
+                <div class="in">
+                    <div class="aboutWe">
+                    <div class="background">
+                        <span>麦子学院</span>
+                    </div>
+                    <div class="jianJie">
+                        <h2>机构简介</h2>
+                        <div>麦子学院是国内IT职业教育的领导品牌，
+                            国内第一个将在线教育课程分为职业课程
+                            和兴趣课程的在线教育机构。
+                            现在美国成立了商务中心，
+                            所有课程的的制作老师均为业内大牛，
+                            因为专注所以专业，让你站在巨人的肩膀上快速成长。</div>
+                    </div>
+                </div>
+                </div><!--与我相关-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <i class="iconfont">&#xe9a2;</i>
+        <p>Copyright © 2019 Tencent. All Rights Reserved.</p>
+        <p>深圳市腾讯计算机系统有限公司 版权所
+            有 | 腾讯课堂服务协议 |
+            站点地图 | 侵权投诉 | 问题反馈 | 帮助</p>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        $(function () {
+            //绑定选项
+            $('.navHome li').click(function () {
+                //如果当前处于选择状态，终止
+                if ($(this).hasClass('active')) return;
+                //清除此前的活动状态
+                $('.navHome li').removeClass('active');
+                //设置当前为活动状态
+                $(this).addClass('active');
+                $(".panel").show();
+                //更改面板
+                $('.panel').html($('#totallabel .in').eq($(this).index()).html());
+            });
+        });
+
+
+       /* $(document).ready(function(){
+            var nav=$(".select"); //得到导航对象
+            var win=$(window); //得到窗口对象
+            var sc=$(document);//得到document文档对象。
+            var navHeight = nav.offset().top;
+            win.scroll(function(){
+                if(sc.scrollTop() >= navHeight){
+                    nav.addClass("nav_fix_pos");
+                }else{
+                    nav.removeClass("nav_fix_pos");
+                }
+            });
+        });*/
+
+
+       $(document).ready(function () {
+           $(".fixed i:first-child").mouseenter(function () {
+               $('#erweima').css("display","block");
+               $('#erweima').css("background-color","skyblue");
+           })
+       });
+       $(document).ready(function () {
+            $(".fixed i:first-child").mouseleave(function () {
+                $("#erweima").css("display","none");
+            })
+        });
+
+
+
+
+        /*window.addEventListener('scroll', function(){
+            let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
+            if(t>0){
+                $('.navHome').addClass('add-top')
+            }else{
+                $('.navHome').removeClass('add-top')
+            }
+        });*/
+        $(function(){
+            var banOffTop=$(".navHome").offset().top;//获取到距离顶部的垂直距离
+            var scTop=0;//初始化垂直滚动的距离
+            $(document).scroll(function(){
+                scTop=$(this).scrollTop();//获取到滚动条拉动的距离
+                //console.log(scTop);//查看滚动时，垂直方向上，滚动条滚动的距离
+                if(scTop>=443){
+                    //核心部分：当滚动条拉动的距离大于等于导航栏距离顶部的距离时，添加指定的样式
+                    $(".navHome").addClass("add-top");
+                }else{
+                    $(".navHome").removeClass("add-top");
+                }
+
+            })
+        });
+
+    </script>
+    <!--导航结束-->
+
+<!--右下角固定的图标-->
+    <div class="fixed">
+        <i class="iconfont">&#xe602;</i>
+        <i class="iconfont" style="text-decoration: overline;">&#xe607;</i>
+        <div><img src="image/二维码.jpg" alt="" id="erweima"></div>
+    </div>
+<!--右下角固定的图标-->
+</body>
+</html>
