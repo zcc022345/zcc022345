@@ -12,13 +12,12 @@
             top: 0;
             left: 75px;
             background-color: white;
-            //z-index: 1000;
-        }
-        .add-top>ul {
-            margin-left: 200px;
         }
         .add-top>div {
             display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
     </style>
 
@@ -807,18 +806,17 @@
     <div class="middle">
         <div class="middle_top">
             <img src="image/10万.png" alt="" class="middle_tu">
+            <section class="section">
+                <img src="image/麦子学院.jpg" alt="">
+                <div class="section_div">
+                    <h2>麦子学院</h2>
+                    <span>好评度 93%</span><i class="iconfont">&#xe654;</i>
+                    <span>学生数15万</span><i class="iconfont">&#xe654;</i>
+                    <span> 泛IT在线教育平台，在线学习好工作</span><i class="iconfont">&#xe654;</i>
+                    <a href="#" class="qq"><i class="iconfont" style="font-size: 16px;">&#xe63d;</i>在线咨询</a>
+                </div>
+            </section>
         </div>
-        <section class="section">
-            <img src="image/麦子学院.jpg" alt="">
-            <div class="section_div">
-                <h2>麦子学院</h2>
-                <span>好评度 93%</span><i class="iconfont">&#xe654;</i>
-                <span>学生数15万</span><i class="iconfont">&#xe654;</i>
-                <span> 泛IT在线教育平台，在线学习好工作</span><i class="iconfont">&#xe654;</i>
-                <a href="#" class="qq"><i class="iconfont" style="font-size: 16px;">&#xe63d;</i>在线咨询</a>
-            </div>
-        </section>
-
     </div>
     <div class="menu_nav">
         <div class="menu">
@@ -1279,25 +1277,10 @@
         });
 
 
-       /* $(document).ready(function(){
-            var nav=$(".select"); //得到导航对象
-            var win=$(window); //得到窗口对象
-            var sc=$(document);//得到document文档对象。
-            var navHeight = nav.offset().top;
-            win.scroll(function(){
-                if(sc.scrollTop() >= navHeight){
-                    nav.addClass("nav_fix_pos");
-                }else{
-                    nav.removeClass("nav_fix_pos");
-                }
-            });
-        });*/
-
 
        $(document).ready(function () {
            $(".fixed i:first-child").mouseenter(function () {
-               $('#erweima').css("display","block");
-               $('#erweima').css("background-color","skyblue");
+               $('#erweima').css({"display":"block"});
            })
        });
        $(document).ready(function () {
@@ -1338,8 +1321,8 @@
 
 <!--右下角固定的图标-->
     <div class="fixed">
-        <i class="iconfont">&#xe602;</i>
-        <i class="iconfont" style="text-decoration: overline;">&#xe607;</i>
+        <i class="iconfont first">&#xe602;</i>
+        <i class="iconfont second" style="text-decoration: overline;">&#xe607;</i>
         <div><img src="image/二维码.jpg" alt="" id="erweima"></div>
     </div>
 <!--右下角固定的图标-->
