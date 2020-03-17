@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js增删改</title>
+		<script type="text/javascript">
+			function del(){
+				
+				
+				/* 获取a标签的祖父元素 */
+				var tr = this.parentNode.parentNode;
+				
+				/* 删除的名字，两种方式都可以 */
+				//var name = tr.getElementsByTagName("td")[0].innerHTML
+				var name = tr.children[0].innerHTML
+				
+				var flag = confirm("确定删除"+name+"吗？");
+				
+				if(flag){
+					
+					tr.parentNode.removeChild(tr);
+				}
+				
+				
+				
+			};
+			
+			window.onload = function(){
+				
+				/* 删   除 */
+				
+				var allA = document.getElementsByTagName("a");
+				
+				for(var i = 0; i < allA.length;i++){
+					
+					allA[i].onclick = del;
+				};
+				
+				
+				/* 添  加 */
+				var submit = document.getElementById("submit");
+				
+				submit.onclick = function(){
+					
+					/* 获取文本内容  */
+					var name = document.getElementById("name").value;
+					var email = document.getElementById("email").value;
+					
+					/* 创建tr */
+					var tr = document.createElement("tr");
+					
+					/* 创建td */
+					var nameTd = document.createElement("td");
+					var emailTd = document.createElement("td");
+					var aTd = document.createElement("td");
+					
+					/* 创建a标签 */
+					var a = document.createElement("a");
+					
+					/* 创建文本 */
+					var nameText = document.createTextNode(name);
+					var emailText = document.createTextNode(email);
+					var aText = document.createTextNode("Delete");
+					
+					/* 在创建td元素中添加文本 */
+					nameTd.appendChild(nameText);
+					emailTd.appendChild(emailText);
+					a.appendChild(aText);
+					aTd.appendChild(a);
+					
+					/* 在a标签中添加href属性 */
+					a.href = "javascript:;"
+					/* 给a标签添加点击事件 */
+					a.onclick = del;
+					
+					/* 在创建tr元素中添加td */
+					tr.appendChild(nameTd);
+					tr.appendChild(emailTd);
+					tr.appendChild(aTd);
+					
+					/* 获取table
+					var table = document.getElementById("table");
+					
+					将tr放入table中
+					table.appendChild(tr); */
+					
+					/* 获取tbody 
+					将tr放入tbody中*/
+					var tbody = document.getElementsByTagName("tbody")[0];
+					tbody.appendChild(tr);
+					
+					
+					
+				}
+				
+			};
+		</script>
+	</head>
+	<body>
+		<table border="1" cellspacing="" cellpadding="" align="center" id="table">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Tom</td>
+				<td>agqyuf@qq.com</td>
+				<td><a href="javascript:;">delete</a></td>
+			</tr>
+			<tr>
+				<td>Rala</td>
+				<td>agqyuf@132.com</td>
+				<td><a href="javascript:;">delete</a></td>
+			</tr>
+			<tr>
+				<td>Tony</td>
+				<td>31342@d32.com</td>
+				<td><a href="javascript:;">delete</a></td>
+			</tr>
+			
+		</table>
+		<h3 align="center">添加名单</h3>
+		<table style="border: 1px solid #000000;" cellspacing="" cellpadding="" align="center" >
+			<tr>
+				<td class="word">Name</td>
+				<td class="inp">
+					<input type="text" name="name" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td class="word">Email</td>
+				<td class="inp">
+					<input type="text" name="email" id="email">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<button type="button" id="submit">提交</button>
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>
